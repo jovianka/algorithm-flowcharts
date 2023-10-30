@@ -1,0 +1,51 @@
+IrisanTigaHimpunanBilangan(a1, a2, a3, n1, n2, n3)
+
+  i = 0
+
+  j = 0
+
+  while i < n1 and j < n2
+
+    if a1[i] == a2[j]
+
+      irisan.push(a1[i])
+
+      j++
+
+      i++
+
+    else if a1[i] < a2[j]
+
+      i++
+
+    else
+
+      j++
+
+
+
+  q = 0
+
+  r = 0
+  x = n_irisan
+  while q < x and r < n3
+
+    if irisan[q] == a3[r]
+
+      irisan2.push(irisan[q])
+
+      q++
+
+      r++
+
+    else if irisan[q] < a3[r]
+
+      q++
+
+    else
+
+      r++
+
+
+
+return irisan2
