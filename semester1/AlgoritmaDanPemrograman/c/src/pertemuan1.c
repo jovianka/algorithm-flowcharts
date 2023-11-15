@@ -33,25 +33,24 @@ int main()
 
 
   // PIRAMIDA KEBALIK
-  int baris;
-  printf("Berapa baris? ");
-  scanf("%d", &baris);
+  // int baris;
+  // printf("Berapa baris? ");
+  // scanf("%d", &baris);
 
-  for (int i = 0; i < baris; i++)
-  {
-    for (int j = 0; j < i; j++)
-    {
-      printf("  ");
-    }
+  // for (int i = 0; i < baris; i++)
+  // {
+  //   for (int j = 0; j < i; j++)
+  //   {
+  //     printf("  ");
+  //   }
 
-    for (int k = 1; k < (baris - i) * 2; k++)
-    {
-      printf("* ");
-    }
+  //   for (int k = 1; k < (baris - i) * 2; k++)
+  //   {
+  //     printf("* ");
+  //   }
 
-    printf("\n");
-  }
-
+  //   printf("\n");
+  // }
 
   return 0;
 }
