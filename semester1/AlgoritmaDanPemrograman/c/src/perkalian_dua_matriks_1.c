@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int print_multiplied_matrix(int a_rows, int a_cols, int b_rows, int b_cols, int a[a_rows][a_cols], int b[b_rows][b_cols]) {
+int* multiply_matrix(int a_rows, int a_cols, int b_rows, int b_cols, int a[a_rows][a_cols], int b[b_rows][b_cols]) {
 
     // NAIVE APPROACH
         // Input: matrices A and B
@@ -14,7 +14,7 @@ int print_multiplied_matrix(int a_rows, int a_cols, int b_rows, int b_cols, int 
         // Return C
 
 
-    int c[a_rows][b_cols];
+    static int c[a_rows][b_cols];
     int sum = 0;
     
     for (int i = 0; i < a_rows; i++) {
@@ -26,18 +26,8 @@ int print_multiplied_matrix(int a_rows, int a_cols, int b_rows, int b_cols, int 
             sum = 0;
         }
     }
-    
-    printf("Hasil a x b: \n");
-    
-    for (int i = 0; i < a_rows; i++) {
-        printf("\tbaris ke-%d: ", i + 1);
-        
-        for (int j = 0; j < b_cols; j++) {
-            printf("%d, ", c[i][j]);
-        }
-        
-        printf("\n");
-    }
+
+    return c;
 
 }
 
@@ -92,9 +82,23 @@ int main() {
         }
         printf("\n");
     }
-    
+
+    int* c = multiply_matrix(a_rows, a_cols, b_rows, b_cols, a, b);
+
     // print hasil kali matriks
-    print_multiplied_matrix(a_rows, a_cols, b_rows, b_cols, a, b);
+    
+    printf("Hasil a x b: \n");
+    
+    for (int i = 0; i < a_rows; i++) {
+        printf("\tbaris ke-%d: ", i + 1);
+        
+        for (int j = 0; j < b_cols; j++) {
+            printf("%d, ", c[i][j]);
+        }
+        
+        printf("\n");
+    }
+    
 
     return 0;
 }
