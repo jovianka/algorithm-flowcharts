@@ -1,3 +1,6 @@
-[submodule "semester1/AlgoritmaDanPemrograman/tugas-akhir-alpro-1"]
-	path = semester1/AlgoritmaDanPemrograman/tugas-akhir-alpro-1
+[submodule "semester1/algoritma-dan-pemrograman/tugas-akhir-alpro-1"]
+	path = semester1/algoritma-dan-pemrograman/tugas-akhir-alpro-1
 	url = https://github.com/jovianka/tugas-akhir-alpro-1.git
+[submodule "semester2/matematika-diskrit-2/matematika-diskrit-2-graf"]
+	path = semester2/matematika-diskrit-2/matematika-diskrit-2-graf
+	url = https://github.com/jovianka/matematika-diskrit-2-graf.git
