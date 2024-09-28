@@ -4,3 +4,6 @@
 [submodule "semester2/matematika-diskrit-2/matematika-diskrit-2-graf"]
 	path = semester2/matematika-diskrit-2/matematika-diskrit-2-graf
 	url = https://github.com/jovianka/matematika-diskrit-2-graf.git
+[submodule "semester2/struktur-data/tugas-akhir-strukdat"]
+	path = semester2/struktur-data/tugas-akhir-strukdat
+	url = https://github.com/jovianka/tugas-akhir-strukdat
