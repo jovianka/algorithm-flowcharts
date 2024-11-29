@@ -1,1 +1,7 @@
 **/build
+**/.venv
+**/__pycache__
+**/.idea
+**/.mvn
+**/.vscode
+**/target
